@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Learn Devops(834a3ff0-8076-4420-89aa-93acd4df6b68)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'ls -lrt'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
